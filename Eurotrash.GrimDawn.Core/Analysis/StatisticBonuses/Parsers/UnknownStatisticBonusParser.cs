@@ -1,8 +1,8 @@
-﻿using Eurotash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes;
-using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes;
+using Eurotrash.GrimDawn.Core.Data.Devotions;
 using System;
 
-namespace Eurotash.GrimDawn.Core.Analysis.StatisticBonuses.Parsers
+namespace Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses.Parsers
 {
     internal class UnknownStatisticBonusParser : IStatisticBonusParser
     {

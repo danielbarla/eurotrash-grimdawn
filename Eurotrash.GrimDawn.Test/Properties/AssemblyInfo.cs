@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion(Eurotash.GrimDawn.Core.VersionInfo.FullVersion)]
-[assembly: AssemblyFileVersion(Eurotash.GrimDawn.Core.VersionInfo.FullVersion)]
+[assembly: AssemblyVersion(Eurotrash.GrimDawn.Core.VersionInfo.FullVersion)]
+[assembly: AssemblyFileVersion(Eurotrash.GrimDawn.Core.VersionInfo.FullVersion)]

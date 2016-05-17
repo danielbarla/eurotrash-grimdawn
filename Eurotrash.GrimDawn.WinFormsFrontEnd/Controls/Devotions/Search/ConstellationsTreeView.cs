@@ -1,8 +1,8 @@
-﻿using Eurotash.GrimDawn.Core.Analysis.Affinities;
-using Eurotash.GrimDawn.Core.Analysis.Search;
-using Eurotash.GrimDawn.Core.Build.Devotions;
-using Eurotash.GrimDawn.Core.Data;
-using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Analysis.Affinities;
+using Eurotrash.GrimDawn.Core.Analysis.Search;
+using Eurotrash.GrimDawn.Core.Build.Devotions;
+using Eurotrash.GrimDawn.Core.Data;
+using Eurotrash.GrimDawn.Core.Data.Devotions;
 using Eurotrash.GrimDawn.WinFormsFrontEnd.Common;
 using System;
 using System.Collections.Generic;

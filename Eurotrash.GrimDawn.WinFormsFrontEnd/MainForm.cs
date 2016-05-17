@@ -1,4 +1,4 @@
-﻿using Eurotash.GrimDawn.Core.Build;
+﻿using Eurotrash.GrimDawn.Core.Build;
 using Eurotrash.GrimDawn.WinFormsFrontEnd.Common;
 using Eurotrash.GrimDawn.WinFormsFrontEnd.Data;
 using System;
@@ -15,7 +15,7 @@ namespace Eurotrash.GrimDawn.WinFormsFrontEnd
         {
             InitializeComponent();
 
-            this.Text = String.Format(this.Text, Eurotash.GrimDawn.Core.VersionInfo.ShortVersion);
+            this.Text = String.Format(this.Text, Eurotrash.GrimDawn.Core.VersionInfo.ShortVersion);
         }
 
         State _state;

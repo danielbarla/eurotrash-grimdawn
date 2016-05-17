@@ -17,12 +17,12 @@ namespace Eurotrash.GrimDawn.WinFormsFrontEnd.Controls
             InitializeComponent();
         }
 
-        private void _constellationSearchControl_AddToBuild(Eurotash.GrimDawn.Core.Build.Devotions.DevotionSelectionAction obj)
+        private void _constellationSearchControl_AddToBuild(Eurotrash.GrimDawn.Core.Build.Devotions.DevotionSelectionAction obj)
         {
             _devotionBuildControl.AddDevotionSelectionAction(obj);
         }
 
-        internal void SetDataSource(Eurotash.GrimDawn.Core.Build.GrimDawnBuild build)
+        internal void SetDataSource(Eurotrash.GrimDawn.Core.Build.GrimDawnBuild build)
         {
             _devotionBuildControl.SetDataSource(build);
         }

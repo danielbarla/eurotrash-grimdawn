@@ -1,5 +1,5 @@
-﻿using Eurotash.GrimDawn.Core.Analysis.Affinities;
-using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Analysis.Affinities;
+using Eurotrash.GrimDawn.Core.Data.Devotions;
 using Eurotrash.GrimDawn.WinFormsFrontEnd.Properties;
 using System;
 using System.Collections.Generic;

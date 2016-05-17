@@ -1,8 +1,8 @@
-﻿using Eurotash.GrimDawn.Core.Analysis.Search;
-using Eurotash.GrimDawn.Core.Analysis.StatisticBonuses;
-using Eurotash.GrimDawn.Core.Build.Devotions;
-using Eurotash.GrimDawn.Core.Data;
-using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Analysis.Search;
+using Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses;
+using Eurotrash.GrimDawn.Core.Build.Devotions;
+using Eurotrash.GrimDawn.Core.Data;
+using Eurotrash.GrimDawn.Core.Data.Devotions;
 using Eurotrash.GrimDawn.WinFormsFrontEnd.Common;
 using Newtonsoft.Json;
 using System;

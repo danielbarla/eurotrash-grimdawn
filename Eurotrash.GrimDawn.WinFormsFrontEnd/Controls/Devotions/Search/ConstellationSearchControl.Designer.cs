@@ -73,7 +73,6 @@
             this._effectsTextBox.Name = "_effectsTextBox";
             this._effectsTextBox.Size = new System.Drawing.Size(207, 20);
             this._effectsTextBox.TabIndex = 0;
-            this._effectsTextBox.Text = "Fire";
             // 
             // _tipLabel
             // 
@@ -95,7 +94,7 @@
             this._constellationsTreeView.Name = "_constellationsTreeView";
             this._constellationsTreeView.Size = new System.Drawing.Size(960, 400);
             this._constellationsTreeView.TabIndex = 1;
-            this._constellationsTreeView.AddToBuild += new System.Action<Eurotash.GrimDawn.Core.Build.Devotions.DevotionSelectionAction>(this._constellationsTreeView_AddToBuild);
+            this._constellationsTreeView.AddToBuild += new System.Action<Eurotrash.GrimDawn.Core.Build.Devotions.DevotionSelectionAction>(this._constellationsTreeView_AddToBuild);
             // 
             // ConstellationSearchControl
             // 

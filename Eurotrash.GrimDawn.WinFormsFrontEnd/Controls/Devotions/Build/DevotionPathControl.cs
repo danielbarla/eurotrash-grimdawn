@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Eurotash.GrimDawn.Core.Build.Devotions;
+using Eurotrash.GrimDawn.Core.Build.Devotions;
 using Eurotrash.GrimDawn.WinFormsFrontEnd.Common;
-using Eurotash.GrimDawn.Core.Analysis.Constellations;
+using Eurotrash.GrimDawn.Core.Analysis.Constellations;
 using Eurotrash.GrimDawn.WinFormsFrontEnd.Forms;
-using Eurotash.GrimDawn.Core.Build;
+using Eurotrash.GrimDawn.Core.Build;
 
 namespace Eurotrash.GrimDawn.WinFormsFrontEnd.Controls.Build
 {

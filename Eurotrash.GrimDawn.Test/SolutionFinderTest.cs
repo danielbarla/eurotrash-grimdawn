@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Eurotash.GrimDawn.Core.Analysis.Constellations;
-using Eurotash.GrimDawn.Core.Build.Devotions;
+using Eurotrash.GrimDawn.Core.Analysis.Constellations;
+using Eurotrash.GrimDawn.Core.Build.Devotions;
 
 namespace Eurotrash.GrimDawn.Test
 {

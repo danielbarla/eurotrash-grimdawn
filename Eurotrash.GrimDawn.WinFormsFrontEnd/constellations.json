@@ -5,7 +5,6 @@
     "Quote": "The crossroads mark the changing of ways, the opening of endless possibilities.",
     "Requirements": [],
     "CompletionBonuses": [],
-    "RequirementTotal": 0,
     "Stars": [
       {
         "Index": 1,
@@ -120,7 +119,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -210,7 +208,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -286,7 +283,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -368,7 +364,6 @@
         "Value": 4
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -426,17 +421,16 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
         "StatisticsBonuses": [
           {
-            "Text": "+15% Pierce Damage",
+            "Text": "+10% Pierce Damage",
             "AffinityBonuses": null
           },
           {
-            "Text": "+15% Cold Damage",
+            "Text": "+10% Cold Damage",
             "AffinityBonuses": null
           }
         ],
@@ -456,15 +450,15 @@
         "Index": 3,
         "StatisticsBonuses": [
           {
-            "Text": "3-7 Piercing Damage",
+            "Text": "x Piercing Damage",
             "AffinityBonuses": null
           },
           {
-            "Text": "+24% Pierce Damage",
+            "Text": "+15% Pierce Damage",
             "AffinityBonuses": null
           },
           {
-            "Text": "+24% Cold Damage",
+            "Text": "+15% Cold Damage",
             "AffinityBonuses": null
           }
         ],
@@ -475,10 +469,6 @@
         "StatisticsBonuses": [
           {
             "Text": "+15 Offensive Ability",
-            "AffinityBonuses": null
-          },
-          {
-            "Text": "+10% Bleeding Resistance",
             "AffinityBonuses": null
           }
         ],
@@ -502,7 +492,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -574,7 +563,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -676,7 +664,6 @@
         "Value": 6
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -782,7 +769,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -888,7 +874,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -986,7 +971,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1052,7 +1036,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1136,7 +1119,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1204,7 +1186,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1282,7 +1263,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1376,7 +1356,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1482,7 +1461,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1572,7 +1550,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1640,7 +1617,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1694,7 +1670,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1766,7 +1741,6 @@
         "Value": 4
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1824,7 +1798,6 @@
         "Value": 6
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -1926,7 +1899,6 @@
         "Value": 2
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2004,7 +1976,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2082,7 +2053,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2176,7 +2146,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2246,7 +2215,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2334,7 +2302,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2432,7 +2399,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2526,7 +2492,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2584,7 +2549,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2652,7 +2616,6 @@
         "Value": 4
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2722,7 +2685,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2816,7 +2778,6 @@
         "Value": 4
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2874,7 +2835,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -2946,7 +2906,6 @@
         "Value": 5
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -3048,7 +3007,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 1,
     "Stars": [
       {
         "Index": 1,
@@ -3144,7 +3102,6 @@
         "Value": 1
       }
     ],
-    "RequirementTotal": 11,
     "Stars": [
       {
         "Index": 1,
@@ -3282,7 +3239,6 @@
         "Value": 1
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -3434,7 +3390,6 @@
         "Value": 1
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -3556,7 +3511,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 11,
     "Stars": [
       {
         "Index": 1,
@@ -3694,7 +3648,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 11,
     "Stars": [
       {
         "Index": 1,
@@ -3802,7 +3755,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -3894,7 +3846,6 @@
         "Value": 2
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -3982,7 +3933,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -4092,7 +4042,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -4198,7 +4147,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -4296,13 +4244,12 @@
         "Value": 1
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
         "StatisticsBonuses": [
           {
-            "Text": "+40% Physical Damage",
+            "Text": "+20% Physical Damage",
             "AffinityBonuses": null
           }
         ],
@@ -4358,11 +4305,11 @@
         "Index": 5,
         "StatisticsBonuses": [
           {
-            "Text": "+50% Physical Damage",
+            "Text": "+25% Physical Damage",
             "AffinityBonuses": null
           },
           {
-            "Text": "+50% Internal Trauma Damage",
+            "Text": "+25% Internal Trauma Damage",
             "AffinityBonuses": null
           }
         ],
@@ -4424,7 +4371,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 11,
     "Stars": [
       {
         "Index": 1,
@@ -4524,7 +4470,6 @@
         "Value": 1
       }
     ],
-    "RequirementTotal": 11,
     "Stars": [
       {
         "Index": 1,
@@ -4658,7 +4603,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 11,
     "Stars": [
       {
         "Index": 1,
@@ -4750,7 +4694,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -4836,7 +4779,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -4966,7 +4908,6 @@
         "Value": 1
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -5082,7 +5023,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -5202,7 +5142,6 @@
         "Value": 2
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -5292,7 +5231,6 @@
         "Value": 1
       }
     ],
-    "RequirementTotal": 8,
     "Stars": [
       {
         "Index": 1,
@@ -5416,7 +5354,6 @@
         "Value": 1
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -5526,7 +5463,6 @@
         "Value": 2
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -5614,7 +5550,6 @@
         "Value": 2
       }
     ],
-    "RequirementTotal": 8,
     "Stars": [
       {
         "Index": 1,
@@ -5726,7 +5661,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -5822,7 +5756,6 @@
         "Value": 1
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -5928,7 +5861,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -6010,7 +5942,6 @@
         "Value": 1
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -6132,7 +6063,6 @@
         "Value": 1
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -6266,7 +6196,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -6368,7 +6297,6 @@
         "Value": 2
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -6484,7 +6412,6 @@
         "Value": 3
       }
     ],
-    "RequirementTotal": 10,
     "Stars": [
       {
         "Index": 1,
@@ -6607,7 +6534,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 26,
     "Stars": [
       {
         "Index": 1,
@@ -6770,7 +6696,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 26,
     "Stars": [
       {
         "Index": 1,
@@ -6881,7 +6806,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 28,
     "Stars": [
       {
         "Index": 1,
@@ -7026,7 +6950,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 23,
     "Stars": [
       {
         "Index": 1,
@@ -7199,7 +7122,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 26,
     "Stars": [
       {
         "Index": 1,
@@ -7336,7 +7258,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 26,
     "Stars": [
       {
         "Index": 1,
@@ -7489,7 +7410,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 27,
     "Stars": [
       {
         "Index": 1,
@@ -7624,7 +7544,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 9,
     "Stars": [
       {
         "Index": 1,
@@ -7765,7 +7684,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 27,
     "Stars": [
       {
         "Index": 1,
@@ -7918,17 +7836,16 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 27,
     "Stars": [
       {
         "Index": 1,
         "StatisticsBonuses": [
           {
-            "Text": "+80% Lightning Damage",
+            "Text": "40% Lightning Damage",
             "AffinityBonuses": null
           },
           {
-            "Text": "+20 Offensive Ability",
+            "Text": "+15 Offensive Ability",
             "AffinityBonuses": null
           }
         ],
@@ -7938,11 +7855,11 @@
         "Index": 2,
         "StatisticsBonuses": [
           {
-            "Text": "+80% Aether Damage",
+            "Text": "40% Aether Damage",
             "AffinityBonuses": null
           },
           {
-            "Text": "+20 Offensive Ability",
+            "Text": "+15 Offensive Ability",
             "AffinityBonuses": null
           }
         ],
@@ -7980,11 +7897,11 @@
         "Index": 5,
         "StatisticsBonuses": [
           {
-            "Text": "+100% Lightning Damage",
+            "Text": "+50% Lightning Damage",
             "AffinityBonuses": null
           },
           {
-            "Text": "+100% Aether Damage",
+            "Text": "+50% Aether Damage",
             "AffinityBonuses": null
           },
           {
@@ -8033,7 +7950,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 27,
     "Stars": [
       {
         "Index": 1,
@@ -8160,7 +8076,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 23,
     "Stars": [
       {
         "Index": 1,
@@ -8289,7 +8204,6 @@
       }
     ],
     "CompletionBonuses": [],
-    "RequirementTotal": 23,
     "Stars": [
       {
         "Index": 1,

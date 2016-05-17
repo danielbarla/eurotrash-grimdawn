@@ -83,7 +83,7 @@
             this._constellationSearchControl.Name = "_constellationSearchControl";
             this._constellationSearchControl.Size = new System.Drawing.Size(411, 484);
             this._constellationSearchControl.TabIndex = 2;
-            this._constellationSearchControl.AddToBuild += new System.Action<Eurotash.GrimDawn.Core.Build.Devotions.DevotionSelectionAction>(this._constellationSearchControl_AddToBuild);
+            this._constellationSearchControl.AddToBuild += new System.Action<Eurotrash.GrimDawn.Core.Build.Devotions.DevotionSelectionAction>(this._constellationSearchControl_AddToBuild);
             // 
             // headingControl2
             // 

@@ -1,6 +1,6 @@
-﻿using Eurotash.GrimDawn.Core.Analysis.StatisticBonuses;
-using Eurotash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes;
-using Eurotash.GrimDawn.Core.Build.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses;
+using Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes;
+using Eurotrash.GrimDawn.Core.Build.Devotions;
 using Eurotrash.GrimDawn.WinFormsFrontEnd.Common;
 using System;
 using System.Collections.Generic;

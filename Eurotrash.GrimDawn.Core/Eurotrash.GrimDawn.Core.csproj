@@ -7,8 +7,8 @@
     <ProjectGuid>{DC6BAE16-FA7D-4282-A6D9-3197CCB8D221}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Eurotash.GrimDawn.Core</RootNamespace>
-    <AssemblyName>Eurotash.GrimDawn.Core</AssemblyName>
+    <RootNamespace>Eurotrash.GrimDawn.Core</RootNamespace>
+    <AssemblyName>Eurotrash.GrimDawn.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

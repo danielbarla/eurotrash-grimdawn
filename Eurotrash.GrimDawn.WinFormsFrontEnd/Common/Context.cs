@@ -1,5 +1,5 @@
-﻿using Eurotash.GrimDawn.Core.Data;
-using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Data;
+using Eurotrash.GrimDawn.Core.Data.Devotions;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;

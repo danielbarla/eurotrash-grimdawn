@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using Eurotash.GrimDawn.Core.Analysis.StatisticBonuses;
-using Eurotash.GrimDawn.Core.Data;
-using Eurotash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes;
-using Eurotash.GrimDawn.Core.Build.Devotions;
-using Eurotash.GrimDawn.Core.Build;
+using Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses;
+using Eurotrash.GrimDawn.Core.Data;
+using Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes;
+using Eurotrash.GrimDawn.Core.Build.Devotions;
+using Eurotrash.GrimDawn.Core.Build;
 using System.Text;
 
 namespace Eurotrash.GrimDawn.WinFormsFrontEnd.Controls.Build

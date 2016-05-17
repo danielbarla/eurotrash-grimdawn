@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Eurotash.GrimDawn.Core.Analysis.StatisticBonuses;
-using Eurotash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes;
+using Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses;
+using Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes;
 
 namespace Eurotrash.GrimDawn.Test
 {

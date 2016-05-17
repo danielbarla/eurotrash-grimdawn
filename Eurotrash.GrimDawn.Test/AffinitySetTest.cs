@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Eurotash.GrimDawn.Core.Analysis.Affinities;
+using Eurotrash.GrimDawn.Core.Analysis.Affinities;
 
 namespace Eurotrash.GrimDawn.Test
 {

@@ -1,9 +1,9 @@
-﻿using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Data.Devotions;
 using System;
 using System.Linq;
 using System.Text;
 
-namespace Eurotash.GrimDawn.Core.Analysis.Affinities
+namespace Eurotrash.GrimDawn.Core.Analysis.Affinities
 {
     public class AffinitySet
     {

@@ -1,11 +1,11 @@
-﻿using Eurotash.GrimDawn.Core.Data;
-using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Data;
+using Eurotrash.GrimDawn.Core.Data.Devotions;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace Eurotash.GrimDawn.Core.Analysis.Search
+namespace Eurotrash.GrimDawn.Core.Analysis.Search
 {
     public static class SearchHelper
     {

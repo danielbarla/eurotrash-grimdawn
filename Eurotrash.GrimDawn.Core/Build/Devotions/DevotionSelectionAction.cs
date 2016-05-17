@@ -1,11 +1,11 @@
-﻿using Eurotash.GrimDawn.Core.Analysis.Affinities;
-using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Analysis.Affinities;
+using Eurotrash.GrimDawn.Core.Data.Devotions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 
-namespace Eurotash.GrimDawn.Core.Build.Devotions
+namespace Eurotrash.GrimDawn.Core.Build.Devotions
 {
     [DataContract]
     public class DevotionSelectionAction

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Eurotash.GrimDawn.Core.Data.Devotions
+namespace Eurotrash.GrimDawn.Core.Data.Devotions
 {
     public class Constellation
     {

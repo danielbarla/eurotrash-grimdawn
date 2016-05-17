@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using Eurotash.GrimDawn.Core.Data.Devotions;
-using Eurotash.GrimDawn.Core.Analysis.Constellations;
-using Eurotash.GrimDawn.Core.Analysis.Affinities;
+using Eurotrash.GrimDawn.Core.Data.Devotions;
+using Eurotrash.GrimDawn.Core.Analysis.Constellations;
+using Eurotrash.GrimDawn.Core.Analysis.Affinities;
 using System.Runtime.Serialization;
-using Eurotash.GrimDawn.Core.Data;
+using Eurotrash.GrimDawn.Core.Data;
 
-namespace Eurotash.GrimDawn.Core.Build.Devotions
+namespace Eurotrash.GrimDawn.Core.Build.Devotions
 {
     [DataContract]
     public class DevotionBuild

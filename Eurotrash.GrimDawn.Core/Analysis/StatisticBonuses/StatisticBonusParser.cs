@@ -1,10 +1,10 @@
-﻿using Eurotash.GrimDawn.Core.Analysis.StatisticBonuses.Parsers;
-using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses.Parsers;
+using Eurotrash.GrimDawn.Core.Data.Devotions;
 using System;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Eurotash.GrimDawn.Core.Analysis.StatisticBonuses
+namespace Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses
 {
     public static class StatisticBonusParser
     {

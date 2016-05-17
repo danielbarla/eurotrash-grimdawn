@@ -1,12 +1,12 @@
-﻿using Eurotash.GrimDawn.Core.Analysis.Affinities;
-using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Analysis.Affinities;
+using Eurotrash.GrimDawn.Core.Data.Devotions;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Eurotash.GrimDawn.Core.Analysis.Constellations
+namespace Eurotrash.GrimDawn.Core.Analysis.Constellations
 {
     public class ConstellationCatalogue : IEnumerable<Constellation>
     {

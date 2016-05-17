@@ -1,7 +1,7 @@
-﻿using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Data.Devotions;
 using System;
 
-namespace Eurotash.GrimDawn.Core.Data
+namespace Eurotrash.GrimDawn.Core.Data
 {
     public class GrimDawnDataContext
     {

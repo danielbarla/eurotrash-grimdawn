@@ -1,6 +1,6 @@
-﻿using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Data.Devotions;
 using System.Collections.Generic;
-namespace Eurotash.GrimDawn.Core.Analysis.StatisticBonuses
+namespace Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses
 {
     public interface IStatisticBonus
     {

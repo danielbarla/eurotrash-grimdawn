@@ -1,11 +1,11 @@
-﻿using Eurotash.GrimDawn.Core.Build.Devotions;
-using Eurotash.GrimDawn.Core.Data;
-using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Build.Devotions;
+using Eurotrash.GrimDawn.Core.Data;
+using Eurotrash.GrimDawn.Core.Data.Devotions;
 using Newtonsoft.Json;
 using System;
 using System.IO;
 
-namespace Eurotash.GrimDawn.Core.Build
+namespace Eurotrash.GrimDawn.Core.Build
 {
     public class GrimDawnBuild
     {

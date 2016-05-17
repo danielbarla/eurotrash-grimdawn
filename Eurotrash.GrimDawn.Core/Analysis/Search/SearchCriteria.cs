@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Eurotash.GrimDawn.Core.Analysis.Search
+namespace Eurotrash.GrimDawn.Core.Analysis.Search
 {
     public class SearchCriteria
     {

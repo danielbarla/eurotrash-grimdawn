@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Eurotash.GrimDawn.Core
+namespace Eurotrash.GrimDawn.Core
 {
     public static class VersionInfo
     {

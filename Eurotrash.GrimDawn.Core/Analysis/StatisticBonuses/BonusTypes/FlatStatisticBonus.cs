@@ -1,9 +1,9 @@
-﻿using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Data.Devotions;
 using System;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace Eurotash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes
+namespace Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes
 {
     public class FlatStatisticBonus : StatisticBonusBase
     {

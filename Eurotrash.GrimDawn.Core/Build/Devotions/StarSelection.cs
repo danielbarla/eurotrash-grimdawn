@@ -1,7 +1,7 @@
-﻿using Eurotash.GrimDawn.Core.Data.Devotions;
+﻿using Eurotrash.GrimDawn.Core.Data.Devotions;
 using System;
 
-namespace Eurotash.GrimDawn.Core.Build.Devotions
+namespace Eurotrash.GrimDawn.Core.Build.Devotions
 {
     public class StarSelection
     {

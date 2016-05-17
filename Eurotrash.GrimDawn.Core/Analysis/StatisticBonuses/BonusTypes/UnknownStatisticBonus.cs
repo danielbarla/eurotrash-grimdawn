@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Eurotash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes
+namespace Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses.BonusTypes
 {
     public class UnknownStatisticBonus : IStatisticBonus
     {

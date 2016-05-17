@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Eurotash.GrimDawn.Core.Data.Devotions
+namespace Eurotrash.GrimDawn.Core.Data.Devotions
 {
     public class Affinity
     {
