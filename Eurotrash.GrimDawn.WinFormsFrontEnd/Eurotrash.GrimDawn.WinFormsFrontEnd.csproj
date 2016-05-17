@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC709E00-C31B-4DEA-A87F-0EBC3F92E42D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eurotrash.GrimDawn.WinFormsFrontEnd</RootNamespace>
+    <AssemblyName>Eurotrash.GrimDawn.WinFormsFrontEnd</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Brick-Add.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AffinityImageCache.cs" />
+    <Compile Include="Common\Context.cs" />
+    <Compile Include="Common\HeadingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\HeadingControl.Designer.cs">
+      <DependentUpon>HeadingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Devotions\Build\DevotionPathControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Devotions\Build\DevotionPathControl.Designer.cs">
+      <DependentUpon>DevotionPathControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Devotions\ConstellationsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Devotions\ConstellationsControl.Designer.cs">
+      <DependentUpon>ConstellationsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Devotions\Search\ConstellationSearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Devotions\Search\ConstellationSearchControl.Designer.cs">
+      <DependentUpon>ConstellationSearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Devotions\Search\ConstellationsTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Devotions\Search\ConstellationsTreeView.Designer.cs">
+      <DependentUpon>ConstellationsTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Devotions\Build\DevotionBuildControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Devotions\Build\DevotionBuildControl.Designer.cs">
+      <DependentUpon>DevotionBuildControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\State.cs" />
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DevotionOptionsSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DevotionOptionsSelectionForm.Designer.cs">
+      <DependentUpon>DevotionOptionsSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ErrorForm.Designer.cs">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Common\HeadingControl.resx">
+      <DependentUpon>HeadingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Devotions\Build\DevotionPathControl.resx">
+      <DependentUpon>DevotionPathControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Devotions\ConstellationsControl.resx">
+      <DependentUpon>ConstellationsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Devotions\Search\ConstellationSearchControl.resx">
+      <DependentUpon>ConstellationSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Devotions\Search\ConstellationsTreeView.resx">
+      <DependentUpon>ConstellationsTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Devotions\Build\DevotionBuildControl.resx">
+      <DependentUpon>DevotionBuildControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DevotionOptionsSelectionForm.resx">
+      <DependentUpon>DevotionOptionsSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ErrorForm.resx">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="constellations.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Eurotrash.GrimDawn.Core\Eurotrash.GrimDawn.Core.csproj">
+      <Project>{dc6bae16-fa7d-4282-a6d9-3197ccb8d221}</Project>
+      <Name>Eurotrash.GrimDawn.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Brick-Add.ico" />
+    <Content Include="Images\FatCow\Brick-Add.ico" />
+    <Content Include="Images\FatCow\Chart-Line.png" />
+    <Content Include="Images\FatCow\Toucan.png" />
+    <Content Include="Images\FatCow\User-Zorro.png" />
+    <Content Include="Images\SilkIcons\accept.png" />
+    <Content Include="Images\SilkIcons\anchor.png" />
+    <Content Include="Images\SilkIcons\arrow_down.png" />
+    <Content Include="Images\SilkIcons\arrow_up.png" />
+    <Content Include="Images\SilkIcons\cancel.png" />
+    <Content Include="Images\SilkIcons\delete.png" />
+    <Content Include="Images\SilkIcons\wand.png" />
+    <Content Include="Images\Wiki\Ascendant_Icon.png" />
+    <Content Include="Images\Wiki\Chaos_Icon.png" />
+    <Content Include="Images\Wiki\Eldritch_Icon.png" />
+    <Content Include="Images\Wiki\Order_Icon.png" />
+    <Content Include="Images\Wiki\Primordial_Icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

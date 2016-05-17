@@ -7,7 +7,7 @@ A simple companion utility for the (awesome) game [Grim Dawn](http://www.grimdaw
 ![Secondary screenshot](http://i.imgur.com/616CVWi.png?1)
 
 
-# Why?
+## Why?
 
 There's already an excellent utility called [GrimCalc](http://grimcalc.com/) for general build planning, however at the
 time of writing (GD 1.0), Devotions support is / was quite basic.  I wanted to learn more about what Devotions options were 
@@ -19,14 +19,14 @@ available, without having to hover the mouse over each individual star.  Specifi
   + Preservation of build order for future reference
 
 
-# Import Tool
+## Import Tool
 
 This main utility gets its database by downloading and parsing the GD wiki.  A separate utility exists to do this downloading,
 parsing and exporting.  Users don't generally need to know about this separate utility, as the end result is packaged in the
 release.
 
 
-# Known Issues
+## Known Issues
 
   - Uses "data" from the Wiki, which could be incorrect or incomplete.
   - Support for incomplete constellation selection.  E.g. if you choose to take only 3 stars of a 5 star constellation, you 
@@ -34,7 +34,8 @@ release.
   - The "fix problems" button can only fix small gaps.  Some heuristics / early exiting would would be required to support
     larger searches (e.g. adding "Oleron" and expecting the utility to make a path to it for you).
 
-# Ideas / WIP
+
+## Ideas / WIP
 
   - Since shrines are static and well known, we could tag the build with where in the game you can expect to reach each step in
     in the build.  E.g. "Middle of Act II, Normal".

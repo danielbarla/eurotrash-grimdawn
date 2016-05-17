@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC6BAE16-FA7D-4282-A6D9-3197CCB8D221}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eurotash.GrimDawn.Core</RootNamespace>
+    <AssemblyName>Eurotash.GrimDawn.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analysis\Affinities\AffinitySet.cs" />
+    <Compile Include="Analysis\Constellations\ConstellationCatalogue.cs" />
+    <Compile Include="Analysis\Search\SearchCriteria.cs" />
+    <Compile Include="Analysis\Search\SearchHelper.cs" />
+    <Compile Include="Analysis\StatisticBonuses\BonusTypes\FlatStatisticBonus.cs" />
+    <Compile Include="Analysis\StatisticBonuses\BonusTypes\ReversedPercentageStatisticBonus.cs" />
+    <Compile Include="Analysis\StatisticBonuses\BonusTypes\PercentageStatisticBonus.cs" />
+    <Compile Include="Analysis\StatisticBonuses\BonusTypes\StatisticBonusBase.cs" />
+    <Compile Include="Analysis\StatisticBonuses\BonusTypes\UnknownStatisticBonus.cs" />
+    <Compile Include="Analysis\StatisticBonuses\IStatisticBonus.cs" />
+    <Compile Include="Analysis\StatisticBonuses\IStatisticBonusParser.cs" />
+    <Compile Include="Analysis\StatisticBonuses\Parsers\FlatStatisticBonusParser.cs" />
+    <Compile Include="Analysis\StatisticBonuses\Parsers\ReversedPercentageStatisticBonusParser.cs" />
+    <Compile Include="Analysis\StatisticBonuses\Parsers\PercentageStatisticBonusParser.cs" />
+    <Compile Include="Analysis\StatisticBonuses\Parsers\UnknownStatisticBonusParser.cs" />
+    <Compile Include="Analysis\StatisticBonuses\StatisticBonusParser.cs" />
+    <Compile Include="Build\Devotions\ConstellationSelection.cs" />
+    <Compile Include="Build\Devotions\DevotionBuild.cs" />
+    <Compile Include="Build\Devotions\DevotionSelectionAction.cs" />
+    <Compile Include="Build\Devotions\StarSelection.cs" />
+    <Compile Include="Build\GrimDawnBuild.cs" />
+    <Compile Include="Data\Devotions\Affinity.cs" />
+    <Compile Include="Data\Devotions\Constellation.cs" />
+    <Compile Include="Data\Devotions\Star.cs" />
+    <Compile Include="Data\Devotions\StatisticBonus.cs" />
+    <Compile Include="Data\GrimDawnDataContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VersionInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
