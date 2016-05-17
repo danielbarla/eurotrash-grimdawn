@@ -37,6 +37,14 @@ namespace Eurotrash.GrimDawn.Import.Common
             }
         }
 
+        internal static async Task<string> GetStringAsync(string url)
+        {
+            using (var client = CreateHttpClient())
+            {
+                return await client.GetStringAsync(url);
+            }
+        }
+
         internal static byte[] GetByteArray(string url)
         {
             using (var client = CreateHttpClient())
