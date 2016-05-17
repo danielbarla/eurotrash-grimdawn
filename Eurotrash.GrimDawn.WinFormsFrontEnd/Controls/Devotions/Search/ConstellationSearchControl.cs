@@ -32,6 +32,8 @@ namespace Eurotrash.GrimDawn.WinFormsFrontEnd.Controls.Search
             var criteria = new SearchCriteria() { SearchTerms = searchTerms };
 
             Search(Context.GrimDawnDataContext.Constellations, criteria);
+
+            _tipLabel.Visible = true;
         }
 
         private void Search(Constellation[] data, SearchCriteria criteria)

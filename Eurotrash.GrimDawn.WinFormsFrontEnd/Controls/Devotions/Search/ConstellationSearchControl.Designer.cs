@@ -32,6 +32,7 @@
             this._searchButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this._effectsTextBox = new System.Windows.Forms.TextBox();
+            this._tipLabel = new System.Windows.Forms.Label();
             this._constellationsTreeView = new Eurotrash.GrimDawn.WinFormsFrontEnd.Controls.Search.ConstellationsTreeView();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +75,19 @@
             this._effectsTextBox.TabIndex = 0;
             this._effectsTextBox.Text = "Fire";
             // 
+            // _tipLabel
+            // 
+            this._tipLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this._tipLabel.AutoSize = true;
+            this._tipLabel.BackColor = System.Drawing.Color.White;
+            this._tipLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this._tipLabel.Location = new System.Drawing.Point(830, 77);
+            this._tipLabel.Name = "_tipLabel";
+            this._tipLabel.Size = new System.Drawing.Size(127, 13);
+            this._tipLabel.TabIndex = 2;
+            this._tipLabel.Text = "Right-click to add to build";
+            this._tipLabel.Visible = false;
+            // 
             // _constellationsTreeView
             // 
             this._constellationsTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -87,6 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this._tipLabel);
             this.Controls.Add(this._constellationsTreeView);
             this.Controls.Add(this.panel1);
             this.Name = "ConstellationSearchControl";
@@ -94,6 +109,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -104,5 +120,6 @@
         private System.Windows.Forms.TextBox _effectsTextBox;
         private System.Windows.Forms.Button _searchButton;
         private ConstellationsTreeView _constellationsTreeView;
+        private System.Windows.Forms.Label _tipLabel;
     }
 }
