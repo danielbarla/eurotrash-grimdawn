@@ -102,8 +102,7 @@ namespace Eurotrash.GrimDawn.Import.Controls
                     var rows = table.Find("tr")
                                     .Skip(1)
                                     .ToArray();
-
-
+                    
                     foreach (var row in rows)
                     {
                         var td = row.Find("td").First();
@@ -301,9 +300,8 @@ namespace Eurotrash.GrimDawn.Import.Controls
                 else
                     Log("Creating: " + path);
 
-                var task = Task.Run(() => File.WriteAllText(path, contents));
-                await task.ContinueWith(t => Log(String.Format("Done: {0}", path)));
-                await task;
+                await Task.Run(() => File.WriteAllText(path, contents));
+                Log(String.Format("Done: {0}", path));
             }
             else
             {
