@@ -2,6 +2,8 @@
 
 A simple companion utility for the (awesome) game [Grim Dawn](http://www.grimdawn.com/), to help with planning out Devotions.
 
+Version 0.1 can be downloaded [here](https://github.com/danielbarla/eurotrash-grimdawn/releases).  Requires .Net 4.5 to run.
+
 ![Main screenshot](http://i.imgur.com/vvWcNAY.png)
 
 ![Secondary screenshot](http://i.imgur.com/616CVWi.png?1)
