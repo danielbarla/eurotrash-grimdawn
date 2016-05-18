@@ -9,6 +9,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Eurotrash.GrimDawn.Import.Controls
@@ -27,15 +28,15 @@ namespace Eurotrash.GrimDawn.Import.Controls
             bool hasIndexFile = File.Exists("wiki\\constellation.html");
             bool hasDetailsFiles = (Directory.Exists("wiki") && Directory.GetFiles("wiki", "*.html").Length > 1);
 
-            _downloadDetailPagesButton.Enabled = hasIndexFile;
-            _parseDetailsButton.Enabled = hasIndexFile && hasDetailsFiles;
-            _downloadImagesButton.Enabled = hasIndexFile && hasDetailsFiles;
-            _parseIndexButton.Enabled = hasIndexFile;
+            _downloadDetailPagesButton.InvokeSafe(b => b.Enabled = hasIndexFile);
+            _parseDetailsButton.InvokeSafe(b => b.Enabled = hasIndexFile && hasDetailsFiles);
+            _downloadImagesButton.InvokeSafe(b => b.Enabled = hasIndexFile && hasDetailsFiles);
+            _parseIndexButton.InvokeSafe(b => b.Enabled = hasIndexFile);
         }
 
         private void _downloadIndexButton_Click(object sender, EventArgs e)
         {
-            _listBox.Items.Clear();
+            ClearLog();
 
             if (!Directory.Exists("wiki"))
                 Directory.CreateDirectory("wiki");
@@ -48,10 +49,12 @@ namespace Eurotrash.GrimDawn.Import.Controls
 
         private void _parseIndexButton_Click(object sender, EventArgs e)
         {
+#pragma warning disable 4014
             ParseIndex();
+#pragma warning restore 4014
         }
 
-        private void ParseIndex(bool download = false, bool overwrite = false, bool parseDetails = false, bool downloadImages = false)
+        private async Task ParseIndex(bool download = false, bool overwrite = false, bool parseDetails = false, bool downloadImages = false)
         {
             var constellations = new List<Constellation>();
 
@@ -69,12 +72,13 @@ namespace Eurotrash.GrimDawn.Import.Controls
                                   .Where(item => item.Name == "h2" && item.InnerText != "Contents")
                                   .ToArray();
 
+            List<Task> downloadTasks = new List<Task>();
             foreach (var heading in headings)
             {
                 string category = ExtractHeadingText(heading);
 
-                _listBox.Items.Add("");
-                _listBox.Items.Add("## " + category);
+                Log("");
+                Log("## " + category);
 
                 var tables = heading.NextSiblings()
                                  .TakeWhile(item => item.Name != "h2")
@@ -91,14 +95,14 @@ namespace Eurotrash.GrimDawn.Import.Controls
 
                     if (subCategory != null)
                     {
-                        _listBox.Items.Add("");
-                        _listBox.Items.Add("### " + subCategory);
+                        Log("");
+                        Log("### " + subCategory);
                     }
 
                     var rows = table.Find("tr")
                                     .Skip(1)
                                     .ToArray();
-
+                    
                     foreach (var row in rows)
                     {
                         var td = row.Find("td").First();
@@ -107,10 +111,10 @@ namespace Eurotrash.GrimDawn.Import.Controls
                         string text = link.InnerText;
                         string href = link.Attributes["href"].Value;
 
-                        _listBox.Items.Add(String.Format("  - {0}: {1}", text, href));
+                        Log($"  - {text}: {href}");
 
                         if (download)
-                            Download(text, href, overwrite);
+                            downloadTasks.Add(Download(text, href, overwrite));
 
                         if (parseDetails)
                         {
@@ -121,15 +125,18 @@ namespace Eurotrash.GrimDawn.Import.Controls
                 }
             }
 
-            if (parseDetails)
+            await Task.WhenAll(downloadTasks).ContinueWith(task =>
             {
-                string json = JsonConvert.SerializeObject(constellations, Formatting.Indented);
+                if (parseDetails)
+                {
+                    string json = JsonConvert.SerializeObject(constellations, Formatting.Indented);
 
-                File.WriteAllText("constellations.json", json);
+                    File.WriteAllText("constellations.json", json);
 
-                _listBox.Items.Add("");
-                _listBox.Items.Add(">> constellations.json created");
-            }
+                    Log("");
+                    Log(">> constellations.json created");
+                }
+            });
         }
 
         private Constellation ParseDetails(string text, string category = null, bool downloadImages = false)
@@ -275,7 +282,7 @@ namespace Eurotrash.GrimDawn.Import.Controls
             return html.Trim();
         }
 
-        private void Download(string text, string href, bool overwrite)
+        private async Task Download(string text, string href, bool overwrite)
         {
             string fileName = GetFriendlyName(text);
 
@@ -285,25 +292,20 @@ namespace Eurotrash.GrimDawn.Import.Controls
 
             if (!exists || overwrite)
             {
-                if (exists)
-                    _listBox.Items.Add("Overwriting: " + path);
-                else
-                    _listBox.Items.Add("Creating: " + path);
-
-                Application.DoEvents();
-
                 string url = "http://grimdawn.wikia.com" + href;
+                string contents = await HttpHelper.GetStringAsync(url);
 
-                string contents = HttpHelper.GetString(url);
+                if (exists)
+                    Log("Overwriting: " + path);
+                else
+                    Log("Creating: " + path);
 
-                File.WriteAllText(path, contents);
-
-                _listBox.Items.Add("Done.");
-                Application.DoEvents();
+                await Task.Run(() => File.WriteAllText(path, contents));
+                Log(String.Format("Done: {0}", path));
             }
             else
             {
-                _listBox.Items.Add("File already exists, skipping...");
+                Log("File already exists, skipping...");
             }
         }
 
@@ -322,27 +324,41 @@ namespace Eurotrash.GrimDawn.Import.Controls
 
         private void _downloadDetailPagesButton_Click(object sender, EventArgs e)
         {
-            _listBox.Items.Clear();
+            ClearLog();
 
-            ParseIndex(download: true);
-
-            UpdateControls();
+            ParseIndex(download: true).ContinueWith(task => UpdateControls());
         }
 
         private void _parseDetailsButton_Click(object sender, EventArgs e)
         {
-            _listBox.Items.Clear();
+            ClearLog();
 
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
             ParseIndex(parseDetails: true);
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
         }
 
         private void _downloadImagesButton_Click(object sender, EventArgs e)
         {
-            _listBox.Items.Clear();
+            ClearLog();
 
-            ParseIndex(parseDetails: true, downloadImages: true);
+            ParseIndex(parseDetails: true, downloadImages: true).ContinueWith(task => Log("Images downloaded."));
+        }
 
-            _listBox.Items.Add("Images downloaded.");
+        private void ClearLog()
+        {
+            _listBox.InvokeSafe(box => box.Items.Clear());
+        }
+
+        private void Log(string message)
+        {
+            _listBox.InvokeSafe(box =>
+            {
+                box.Items.Add(message);
+
+                // Scroll to bottom.
+                box.TopIndex = box.Items.Count - 1;
+            });
         }
     }
 }

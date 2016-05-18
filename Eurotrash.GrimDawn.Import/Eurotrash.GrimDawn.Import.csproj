@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Controls.cs" />
     <Compile Include="Common\Html.cs" />
     <Compile Include="Common\HttpHelper.cs" />
     <Compile Include="Common\ProxySettings.cs" />
