@@ -20,6 +20,11 @@ available, without having to hover the mouse over each individual star.  Specifi
   + Checking of build sanity / pre-requisites
   + Preservation of build order for future reference
 
+## Code Documentation
+
+Developers might be interested in the [README for Developers.md file](blob/master/README%20for%20Developers.md), which gives a 
+bit of an overview of the projects' structure.
+
 
 ## Import Tool
 
