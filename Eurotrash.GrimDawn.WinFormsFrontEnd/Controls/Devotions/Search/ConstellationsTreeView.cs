@@ -104,7 +104,7 @@ namespace Eurotrash.GrimDawn.WinFormsFrontEnd.Controls.Search
                 var node = new TreeNode();
                 node.Text = statisticBonus.Text;
 
-                if (criteria != null && SearchHelper.IsMatch(statisticBonus, criteria))
+                if (criteria != null && SearchHelper.IsStatisticBonusMatchForCriteria(statisticBonus, criteria))
                     node.NodeFont = _boldFont;
 
                 parentNode.Nodes.Add(node);
