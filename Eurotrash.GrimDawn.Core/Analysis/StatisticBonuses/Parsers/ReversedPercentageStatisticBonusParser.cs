@@ -5,8 +5,16 @@ using System.Text.RegularExpressions;
 
 namespace Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses.Parsers
 {
+    /// <summary>
+    /// Parser for the ReversedPercentageStatisticBonus class.  This picks up
+    /// percentage-based bonuses when the wording places the percentage at the
+    /// end of the sentence (see below).
+    /// </summary>
     internal class ReversedPercentageStatisticBonusParser : IStatisticBonusParser
     {
+        /// <example>
+        /// "Increases Health Regeneration by 20%"
+        /// </example>
         private Regex _parserRegex = new Regex(@"^\s*(.+)\s+(\d+)[%]$");
 
         public IStatisticBonus TryParse(string text, StatisticBonus bonus)

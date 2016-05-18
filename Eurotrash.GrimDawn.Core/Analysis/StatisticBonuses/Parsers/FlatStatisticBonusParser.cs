@@ -5,8 +5,16 @@ using System.Text.RegularExpressions;
 
 namespace Eurotrash.GrimDawn.Core.Analysis.StatisticBonuses.Parsers
 {
+    /// <summary>
+    /// Parser for the FlatStatisticBonus class.
+    /// </summary>
     internal class FlatStatisticBonusParser : IStatisticBonusParser
     {
+        /// <example>
+        /// "+5 Physical Damage"
+        /// "5 Physical Damage"
+        /// "-5 Fire Damage"
+        /// </example>
         private Regex _parserRegex = new Regex(@"^\s*([+-]*\d+)\s+(.+)$");
 
         public IStatisticBonus TryParse(string text, StatisticBonus sourceBonus)
