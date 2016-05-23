@@ -108,11 +108,23 @@ namespace Eurotrash.GrimDawn.Core.Build.Devotions
             }
         }
 
-        #endregion
+        public void SwapActions(int itemIndex, int otherItemIndex)
+        {
+            var item = this.Actions[itemIndex];
+            var otherItem = this.Actions[otherItemIndex];
 
-        #region Solution Finder Logic
+            this.Actions[itemIndex] = otherItem;
+            this.Actions[otherItemIndex] = item;
 
-        public IEnumerable<DevotionBuild> FindPossibleSolutions(int index, ConstellationCatalogue constellations)
+            UpdateActions();
+        }
+
+
+    #endregion
+
+    #region Solution Finder Logic
+
+    public IEnumerable<DevotionBuild> FindPossibleSolutions(int index, ConstellationCatalogue constellations)
         {
             int maxDepth = 4;
             int maxItems = 200;

@@ -122,12 +122,24 @@ namespace Eurotrash.GrimDawn.WinFormsFrontEnd.Controls.Build
 
         private void _moveUpButton_Click(object sender, EventArgs e)
         {
+            int index = _listView.SelectedItems[0].Index;
 
+            SwapItems(index, index - 1);
         }
 
         private void _moveDownButton_Click(object sender, EventArgs e)
         {
+            int index = _listView.SelectedItems[0].Index;
 
+            SwapItems(index, index + 1);
+        }
+
+        private void SwapItems(int itemIndex, int otherItemIndex)
+        {
+            _build.Devotions.SwapActions(itemIndex, otherItemIndex);
+
+            UpdateValidations();
+            RebuildListView();
         }
 
         private void _removeButton_Click(object sender, EventArgs e)
