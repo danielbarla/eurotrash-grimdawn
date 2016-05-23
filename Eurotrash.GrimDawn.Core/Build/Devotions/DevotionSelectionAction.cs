@@ -47,6 +47,11 @@ namespace Eurotrash.GrimDawn.Core.Build.Devotions
             }
         }
 
+        public int PointsSpentAfterAction
+        {
+            get; set;
+        }
+
         public override string ToString()
         {
             if (this.StarIndex == null)

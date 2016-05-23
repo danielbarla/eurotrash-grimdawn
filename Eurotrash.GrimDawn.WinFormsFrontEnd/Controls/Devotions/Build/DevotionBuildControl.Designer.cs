@@ -38,8 +38,10 @@
             this._tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this._imageList = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this._imageList = new System.Windows.Forms.ImageList(this.components);
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.splitter2 = new System.Windows.Forms.Splitter();
             this.panel1.SuspendLayout();
             this._tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -54,7 +56,7 @@
             this._statisticBonusesListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this._statisticBonusesListView.Location = new System.Drawing.Point(3, 3);
             this._statisticBonusesListView.Name = "_statisticBonusesListView";
-            this._statisticBonusesListView.Size = new System.Drawing.Size(711, 225);
+            this._statisticBonusesListView.Size = new System.Drawing.Size(711, 222);
             this._statisticBonusesListView.TabIndex = 0;
             this._statisticBonusesListView.UseCompatibleStateImageBehavior = false;
             this._statisticBonusesListView.View = System.Windows.Forms.View.Details;
@@ -94,20 +96,21 @@
             this._tabControl.Controls.Add(this.tabPage2);
             this._tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this._tabControl.ImageList = this._imageList;
-            this._tabControl.Location = new System.Drawing.Point(0, 184);
+            this._tabControl.Location = new System.Drawing.Point(0, 187);
             this._tabControl.Name = "_tabControl";
             this._tabControl.SelectedIndex = 0;
-            this._tabControl.Size = new System.Drawing.Size(725, 258);
+            this._tabControl.Size = new System.Drawing.Size(725, 255);
             this._tabControl.TabIndex = 2;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.splitter2);
             this.tabPage1.Controls.Add(this._statisticBonusesListView);
             this.tabPage1.ImageIndex = 0;
             this.tabPage1.Location = new System.Drawing.Point(4, 23);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(717, 231);
+            this.tabPage1.Size = new System.Drawing.Size(717, 228);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Statistics Bonuses";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -124,13 +127,6 @@
             this.tabPage2.Text = "Abilities Granted";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // _imageList
-            // 
-            this._imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("_imageList.ImageStream")));
-            this._imageList.TransparentColor = System.Drawing.Color.Transparent;
-            this._imageList.Images.SetKeyName(0, "Chart-Line.png");
-            this._imageList.Images.SetKeyName(1, "User-Zorro.png");
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -140,11 +136,36 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Not implemented yet";
             // 
+            // _imageList
+            // 
+            this._imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("_imageList.ImageStream")));
+            this._imageList.TransparentColor = System.Drawing.Color.Transparent;
+            this._imageList.Images.SetKeyName(0, "Chart-Line.png");
+            this._imageList.Images.SetKeyName(1, "User-Zorro.png");
+            // 
+            // splitter1
+            // 
+            this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.splitter1.Location = new System.Drawing.Point(0, 184);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(725, 3);
+            this.splitter1.TabIndex = 3;
+            this.splitter1.TabStop = false;
+            // 
+            // splitter2
+            // 
+            this.splitter2.Location = new System.Drawing.Point(3, 3);
+            this.splitter2.Name = "splitter2";
+            this.splitter2.Size = new System.Drawing.Size(3, 222);
+            this.splitter2.TabIndex = 1;
+            this.splitter2.TabStop = false;
+            // 
             // DevotionBuildControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this._tabControl);
+            this.Controls.Add(this.splitter1);
             this.Controls.Add(this.panel1);
             this.Name = "DevotionBuildControl";
             this.Size = new System.Drawing.Size(725, 442);
@@ -169,5 +190,7 @@
         private System.Windows.Forms.ImageList _imageList;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Splitter splitter2;
+        private System.Windows.Forms.Splitter splitter1;
     }
 }

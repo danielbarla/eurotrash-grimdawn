@@ -37,6 +37,8 @@ namespace Eurotrash.GrimDawn.WinFormsFrontEnd.Controls.Build
         internal void SetDataSource(GrimDawnBuild build)
         {
             _build = build;
+
+            UpdateValidations();
             RebuildListView();
         }
 
@@ -77,8 +79,10 @@ namespace Eurotrash.GrimDawn.WinFormsFrontEnd.Controls.Build
             listViewNode.Text = action.BuildIndex.ToString();
             listViewNode.SubItems.Add(action.ToString());
             listViewNode.SubItems.Add(action.PointsSpent.ToString());
-            listViewNode.SubItems.Add(action.AffinitiesGainedAfterAction.ToString());
+            listViewNode.SubItems.Add(action.AffinitiesGainedByAction.ToString());
             listViewNode.SubItems.Add(action.Comments);
+            listViewNode.SubItems.Add(action.PointsSpentAfterAction.ToString());
+            listViewNode.SubItems.Add(action.AffinitiesGainedAfterAction.ToString());
 
             listViewNode.UseItemStyleForSubItems = false;
 
@@ -94,6 +98,25 @@ namespace Eurotrash.GrimDawn.WinFormsFrontEnd.Controls.Build
                 var action = e.Item.Tag as DevotionSelectionAction;
 
                 var image = AffinityImageCache.CreateImage(action.AffinitiesGainedByAction, _listView.Font);
+
+                e.Graphics.DrawImageUnscaledAndClipped(image, e.Bounds);
+            }
+            else if (e.ColumnIndex == 4)
+            {
+                var action = e.Item.Tag as DevotionSelectionAction;
+
+                if (action.HasValidationProblem)
+                {
+                    var image = AffinityImageCache.CreateImage(action.AffinityRequirementGap, _listView.Font);
+
+                    e.Graphics.DrawImageUnscaledAndClipped(image, e.Bounds);
+                }
+            }
+            else if (e.ColumnIndex == 6)
+            {
+                var action = e.Item.Tag as DevotionSelectionAction;
+
+                var image = AffinityImageCache.CreateImage(action.AffinitiesGainedAfterAction, _listView.Font);
 
                 e.Graphics.DrawImageUnscaledAndClipped(image, e.Bounds);
             }

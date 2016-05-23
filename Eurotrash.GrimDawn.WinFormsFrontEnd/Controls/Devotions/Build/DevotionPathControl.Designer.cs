@@ -40,6 +40,8 @@
             this._fixProblemsButton = new System.Windows.Forms.Button();
             this._setCurrentButton = new System.Windows.Forms.Button();
             this._removeButton = new System.Windows.Forms.Button();
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this._buttonPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +52,9 @@
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7});
             this._listView.Dock = System.Windows.Forms.DockStyle.Fill;
             this._listView.FullRowSelect = true;
             this._listView.Location = new System.Drawing.Point(0, 0);
@@ -83,13 +87,13 @@
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Affinities";
+            this.columnHeader4.Text = "Affinities Granted";
             this.columnHeader4.Width = 150;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Comments";
-            this.columnHeader5.Width = 300;
+            this.columnHeader5.Text = "Validation Problems";
+            this.columnHeader5.Width = 150;
             // 
             // _buttonPanel
             // 
@@ -164,6 +168,16 @@
             this._removeButton.UseVisualStyleBackColor = true;
             this._removeButton.Click += new System.EventHandler(this._removeButton_Click);
             // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Total Points";
+            this.columnHeader6.Width = 80;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Total Affinities";
+            this.columnHeader7.Width = 150;
+            // 
             // DevotionPathControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,5 +205,7 @@
         private System.Windows.Forms.Button _fixProblemsButton;
         private System.Windows.Forms.Button _moveUpButton;
         private System.Windows.Forms.Button _moveDownButton;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }

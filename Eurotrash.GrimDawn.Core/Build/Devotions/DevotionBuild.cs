@@ -95,11 +95,14 @@ namespace Eurotrash.GrimDawn.Core.Build.Devotions
         {
             var affinitiesGained = new AffinitySet();
             int index = 1;
+            int pointsSpentTotal = 0;
             foreach (var action in Actions)
             {
                 action.BuildIndex = index;
                 action.AffinitiesGainedBeforeAction = affinitiesGained;
                 action.Validate();
+                pointsSpentTotal += action.PointsSpent;
+                action.PointsSpentAfterAction = pointsSpentTotal;
 
                 affinitiesGained = affinitiesGained.Add(action.AffinitiesGainedByAction);
                 action.AffinitiesGainedAfterAction = affinitiesGained;
